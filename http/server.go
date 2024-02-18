@@ -19,10 +19,10 @@ func StartServer() {
 	// Регистрация обработчиков
 	e.GET("/swagger/*", echoSwagger.WrapHandler)
 	e.POST("/calculate", handler.CalculateHandler)
-	e.POST("/task", handler.AddTask)
-	e.GET("/tasks", handler.GetTasks)
-	e.GET("/task/:id", handler.GetTaskByID)
-	e.POST("/task/:id/result", handler.ReceiveTaskResult)
+	//e.POST("/task", handler.AddTask)
+	//e.GET("/tasks", handler.GetTasks)
+	//e.GET("/task/:id", handler.GetTaskByID)
+	//e.POST("/task/:id/result", handler.ReceiveTaskResult)
 
 	// Запуск сервера
 	e.Logger.Fatal(e.Start(":8080"))
