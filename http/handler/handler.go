@@ -16,35 +16,27 @@ type response struct {
 	Error  string  `json:"error,omitempty"`
 }
 
-type Task struct {
-	ID     string  // Идентификатор задачи
-	Expr   string  // Арифметическое выражение
-	Result float64 // Результат вычисления
-	Status string  // Статус выполнения задачи
-	Error  string  // Ошибка при выполнении задачи
-}
-
 var tasks sync.Map
 
 // AddTask добавляет задачу на вычисление арифметического выражения
-func AddTask(c echo.Context) error {
-	// Логика добавления задачи
-}
+//func AddTask(c echo.Context) error {
+//	// Логика добавления задачи
+//}
 
 // GetTasks возвращает список всех задач
-func GetTasks(c echo.Context) error {
-	// Логика получения списка задач
-}
+//func GetTasks(c echo.Context) error {
+//	// Логика получения списка задач
+//}
 
 // GetTaskByID возвращает задачу по её идентификатору
-func GetTaskByID(c echo.Context) error {
-	// Логика получения задачи по ID
-}
+//func GetTaskByID(c echo.Context) error {
+//	// Логика получения задачи по ID
+//}
 
 // ReceiveTaskResult принимает результат выполнения задачи
-func ReceiveTaskResult(c echo.Context) error {
-	// Логика приема результата задачи
-}
+//func ReceiveTaskResult(c echo.Context) error {
+//	// Логика приема результата задачи
+//}
 
 // CalculateHandler обрабатывает POST запросы на вычисление арифметического выражения
 func CalculateHandler(c echo.Context) error {
